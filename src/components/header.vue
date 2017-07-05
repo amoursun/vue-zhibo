@@ -5,8 +5,8 @@
             <img src="http://i0.hdslb.com/bfs/face/2c3a364cf409a85b4c651a6afbf6ffe22208c654.jpg" @click="toggleSidebar" alt="" class="b-avatar">
             <span class="b-username" @click="toggleSidebar">honeyvickys</span>
             <div class="right">
-                <i class="fa fa-gamepad" aria-hidden="true"></i>
-                <i class="fa fa-download" aria-hidden="true"></i>  
+                <i class="fa fa-gamepad" aria-hidden="true" @click="gamePlay"></i>
+                <i class="fa fa-download" aria-hidden="true" @click="download"></i>
                 <i class="fa fa-search" aria-hidden="true" @click="searchShow"></i>
             </div>
             <div class="b-navbar">
@@ -172,7 +172,13 @@ export default {
             this.sidebarShow = ! this.sidebarShow
         },
         toggleSearchbar () {
-            this.$store.state.searchbarShow  = ! this.$store.state.searchbarShow 
+            this.$store.state.searchbarShow  = ! this.$store.state.searchbarShow
+        },
+        gamePlay () {
+            console.log('play a game')
+        },
+        download () {
+            console.log('download a file')
         },
         searchShow () {
              this.$router.push(
