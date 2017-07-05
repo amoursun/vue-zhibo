@@ -1,3 +1,12 @@
-.idea/
 .DS_Store
 node_modules
+coverage
+bird-server.js
+bridv3-config/birdfile-base.js
+*.sublime-*
+_unbroken-doc
+.idea/
+
+src/app/_service/lockWheel.js
+
+/config.js
